@@ -5,10 +5,10 @@ const UsersList = (data) => {
   console.log(data);
   return (
     <div>
-      <h1>Users List</h1>
+      <h1>User List</h1>
       <ul>
         {data.data.map((user, index) => (
-          <Link key={index+1} to={`/users/${index+1}`}><li>{user.name}</li></Link>
+          <li key={index+1} ><a><Link to={`/users/${index+1}`}>{user.name}</Link></a></li>
         ))}
       </ul>
     </div>
