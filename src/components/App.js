@@ -83,7 +83,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home data={data}/>} />
           <Route path="/users/:id" element={<UsersItem data={data}/>} />
         </Routes>
       </BrowserRouter>
