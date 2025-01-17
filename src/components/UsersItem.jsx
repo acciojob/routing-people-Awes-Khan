@@ -8,11 +8,15 @@ const UsersItem = ( {data} ) => {
   return (
     <div>
       <h1>User Details</h1>
+      <ul>
       {Object.keys(user).map((id) => (
-      <p key={id}>
-        {id.charAt(0).toUpperCase() + id.slice(1).toLowerCase()}:{user[id]}
-      </p>
+        <li key={id}>
+          <p>
+            {id.charAt(0).toUpperCase() + id.slice(1).toLowerCase()}:{user[id]}
+          </p>
+      </li>
       ))}
+      </ul>
     </div>
   );
 };
