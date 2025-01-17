@@ -2,8 +2,8 @@
 import React from "react";
 import './../styles/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UsersList from "./UsersList";
 import UsersItem from "./UsersItem";
+import Home from "./Home";
 
 const App = () => {
   const data = [
@@ -83,7 +83,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<UsersList data={data}/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/users/:id" element={<UsersItem data={data}/>} />
         </Routes>
       </BrowserRouter>
